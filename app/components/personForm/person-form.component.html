@@ -30,7 +30,7 @@
                         required
                         [(ngModel)]="model.sex" name="sex"
                         #sex="ngModel" >
-                    <option *ngFor="let sexItem of sexList" [value]="sex">{{sexItem}}</option>
+                    <option *ngFor="let sexItem of sexList" [value]="sexItem">{{sexItem}}</option>
                 </select>
                 <div [hidden]="sex.valid || sex.pristine" class="alert alert-danger">
                     性别必选
